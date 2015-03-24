@@ -1,0 +1,26 @@
+<!-- <h1>Deaf Aunty</h1>
+
+<p>Say something to Aunty</p>
+
+<form action="/aunty" method="post">
+  <input type="text" name="user_input">
+  <input type="submit" value="Say It!">
+</form>
+
+<p>URL parameters:</p>
+<%= params %> -->
+
+<div class="container">
+  <h1>What's in your STOMACH today?</h1>
+  <h3>DATA PROVIDED</h3>
+  <p><h5>Name : </h5><%=params[:user_input]%></p>
+  <p><h5>What you had for breakfast?(Select 1 only) : </h5><%=params[:group1]%></p>
+  <p><h5>What you had for breakfast? : </h5></p>
+  <%if @options_array !=nil %>
+    <% @options_array.each do |option|%>
+      <p> > <%=option%></p>
+    <%end%>
+  <%end%>
+  <p><h5>Your suggestion : </h5></p>
+  <p><%=params[:suggestion]%></p>
+</div>

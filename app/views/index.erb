@@ -1,0 +1,46 @@
+<!-- <h1>Deaf Aunty</h1>
+
+<p>Say something to Aunty</p>
+
+<form action="/aunty" method="post">
+  <input type="text" name="user_input">
+  <input type="submit" value="Say It!">
+</form>
+
+<p>URL parameters:</p>
+<%= params %> -->
+
+<div class="container">
+  <h1>What's in your STOMACH today?</h1>
+
+  <form action='/cool_url' method='post' >
+  <input type="text" name="user_input" placeholder="Enter your name"></input>  	
+  	<div align="left">
+  		<h3>What you had for breakfast? (Select 1 only)</h3>
+		<input type="radio" name="group1" value="Milk"> Milk<br>
+		<input type="radio" name="group1" value="Butter" checked> Butter<br>
+		<input type="radio" name="group1" value="Cheese"> Cheese<br>
+	</div>
+	<div align="left">
+		<h3>What you had for breakfast?</h3>
+		<input type="checkbox" name="option1" value="Milk"> Milk<br>
+		<input type="checkbox" name="option2" value="Butter" checked> Butter<br>
+		<input type="checkbox" name="option3" value="Cheese"> Cheese<br>
+		<br>
+	</div>
+	<div>
+		<textarea cols="40" rows="5" name="post[suggestion]" placeholder="Any suggestions?">
+		</textarea>
+	</div>
+	<input type="submit" name="submit"></input>
+  </form>
+
+<!--   <h3>Here are the words:</h3>
+  <div class="anagram">
+      <%if @param%>
+        <% @param.anagrams_for.each do |text|%>
+          <p><%=text%></p>
+        <%end%>
+      <%end%>
+  </div> -->
+</div>
